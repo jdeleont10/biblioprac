@@ -20,11 +20,12 @@ public class Comic extends Material implements Prestable{
 
     @Override
     public void prestar() {
+        this.prestado = true;
 
     }
 
     @Override
     public void devolver() {
-
+        this.prestado = false;
     }
 }
